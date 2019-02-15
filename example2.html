@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/navBarStyle.css">
+    <meta charset="utf-8">
+    <title>Picture Tag Example</title>
+  </head>
+  <body>
+    <nav id="mainNav" aria-label="Navigation Bar" class="mainNav">
+      <a href="#"><img class="logo" src="Images/logo.svg" alt="Universiy of Portsmouth Logo"></a>
+      <a class="showMenu" aria-label="Menu" href="javascript:void(0);" tabindex="0" onclick="showMenu()">&#9776;Menu</a>
+      <ul>
+        <li aria-label="Home" tabindex="1" class="noBorder"><a href="index.html">Home</a></li>
+        <li aria-label="Literature Review" tabindex="2"><a href="litreview.html">Literature Review</a></li>
+        <li aria-label="Discovery Log" tabindex="3" class="active"><a href="disclog.html#imgtags">Back</a></li>
+        <li aria-label="HTML Validation Link" tabindex="4"><a href="http://validator.w3.org/check/referer" target="_blank">HTML-Validation</a></li>
+      </ul>
+    </nav>
+    <article class="disclog">
+      <section>
+        <h1>Picture Element Examples</h1>
+        <h2>Showing the use of multiple images for different screen sizes</h2>
+        <picture>
+          <source srcset="https://www.zerohedge.com/sites/default/files/images/user5/imageroot/2017/09/02/norway%201_0.png" media="(min-width: 1000px)"  type="image/png">
+          <source srcset="https://pre00.deviantart.net/a787/th/pre/f/2009/352/a/3/little_fish_png_by_absurdwordpreferred.png" media="(min-width: 700px)" type="image/png">
+          <source srcset="https://images-na.ssl-images-amazon.com/images/I/41Log2oneyL._SL500_AC_SS350_.jpg" media="(min-width: 400px)"  type="image/jpeg">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41Log2oneyL._SL500_AC_SS350_.jpg" class="example" alt="A BIG Fish, a little fish, A Cardboard Box">
+        </picture>
+      </section>
+    </article>
+
+  </body>
+</html>

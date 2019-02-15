@@ -1,0 +1,129 @@
+/* Standard Navbar Styling*/
+.mainNav{
+  z-index: 1;
+  font-size: 2em;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mainNav{
+  background: linear-gradient(to top,rgba(255,255,255,0.75),  rgba(255,255,255,1));
+}
+/* Index navbar styling */
+#navBar.mainNav{
+  width: 80%;
+  top: auto;
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index .mainNav ul{
+  width: auto;
+}
+.index .mainNav ul li:hover{
+  background-color: #ffffff;
+  text-shadow: 1px 1px #450d45;
+}
+.index .mainNav ul li:hover a{
+  color: #006f9f;
+}
+.index .mainNav ul li.active{
+  background-color: rgba(0,0,0,0);
+}
+.index .mainNav ul li.active a{
+text-decoration: underline  overline;
+color: #000000;
+}
+/* Rest of site Navbar styling */
+.mainNav ul{
+  list-style: none;
+  margin: 0;
+  width: 80%;
+  margin-top: 25px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainNav ul li{
+  padding: 0.1em;
+  margin: 0.1em;
+  display: inline;
+  border-left: 1px solid #000000;
+  padding-left: 10px
+}
+.mainNav ul li.noBorder{
+  border-left: none;
+  padding-left:0;
+}
+.mainNav ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+.mainNav ul li:hover{
+  background-color: #ffffff;
+}
+.mainNav ul li.active{
+  background-color: #343434;
+}
+.mainNav ul li.active a{
+  color: #ffffff;
+}
+.mainNav ul li:hover a{
+  text-shadow: 1px 1px #450d45;
+  color: #006f9f;
+}
+.showMenu{
+  display: none;
+  text-decoration: none;
+  color: #000000;
+  background-color: rgba(255,255,255,0.75);
+}
+.showMenu:hover{
+  background-color: #ffffff;
+}
+.logo{
+  display: inline-block;
+  width:5%;
+  float: left;
+  margin: 0;
+
+}
+
+@media screen and (max-width: 700px), screen and (orientation: portrait){
+  .mainNav a{
+    font-size: 2em;
+  }
+  .mainNav ul{
+    padding: 0;
+  }
+  .mainNav ul li{
+    display: none;
+  }
+  .showMenu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    display: block;
+  }
+  .logo{
+    width: 85px;
+  }
+}
+@media screen and (max-width: 700px), screen and (orientation: portrait){
+  .mainNav.responsive ul{
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .mainNav.responsive ul li{
+    display: block;
+    padding-left: 0;
+    border: none;
+  }
+}

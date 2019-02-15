@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/navBarStyle.css">
+    <meta charset="utf-8">
+    <title>Picture Tag Example</title>
+  </head>
+  <body>
+    <nav id="mainNav" aria-label="Navigation Bar" class="mainNav">
+      <a href="#"><img class="logo" src="Images/logo.svg" alt="Universiy of Portsmouth Logo"></a>
+      <a class="showMenu" aria-label="Menu" href="javascript:void(0);" tabindex="0" onclick="showMenu()">&#9776;Menu</a>
+      <ul>
+        <li aria-label="Home" tabindex="1" class="noBorder"><a href="index.html">Home</a></li>
+        <li aria-label="Literature Review" tabindex="2"><a href="litreview.html">Literature Review</a></li>
+        <li aria-label="Discovery Log" tabindex="3" class="active"><a href="disclog.html#imgtags">Back</a></li>
+        <li aria-label="HTML Validation Link" tabindex="4"><a href="http://validator.w3.org/check/referer" target="_blank">HTML-Validation</a></li>
+      </ul>
+    </nav>
+    <article class="disclog">
+      <section>
+        <h1>Picture Element Examples</h1>
+        <h2>Showing the use of multiple sources for different browsers</h2>
+        <picture >
+          <source srcset="Images/examples/cat.gif" type="image/gif">
+          <source srcset="Images/examples/cat.jpg" type="image/jpeg">
+            <img src="Images/examples/cat.png" class="example" alt="A cat in a box">
+        </picture>
+        <picture>
+          <source srcset="Images/examples/madeira.gif" type="image/gif">
+          <source srcset="Images/examples/madeira.jpg" type="image/jpeg">
+            <img src="Images/examples/madeira.png" class="example" alt="A photo taken on the island of Madeira">
+        </picture>
+      </section>
+    </article>
+
+  </body>
+</html>

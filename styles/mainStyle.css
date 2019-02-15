@@ -1,0 +1,195 @@
+/* Base HTML Styling */
+html{
+  width: calc(100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #b8bbc1;
+  color: #000000;
+  font-family: sans-serif;
+}
+body {
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+  height:auto;
+}
+video{
+  width: 50%;
+}
+.video{
+  width: auto;
+}
+h1{
+  font-size: 4em;
+  text-shadow: 1px 1px #621362;
+  margin-top: 0;
+  color: #009fe3;
+}
+h2{
+  font-size: 2em;
+  margin:0;
+  color: #621362;
+  text-decoration: #450d45 solid underline ;
+}
+p{
+  font-size: 1.5em;
+}
+footer{
+  margin: 0;
+  background-color: #ffffff;
+}
+footer p{
+  margin: 0;
+}
+
+/* Index page-specific styling */
+body.index{
+  overflow: auto;
+}
+.index footer{
+  font-size: 1em;
+  margin: 0;
+  padding: 5px;
+}
+.index p{
+  background-color: rgba(255,255,255,0.75);
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Literature Review */
+.litreview, .disclog{
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+}
+.litreview section, .disclog section{
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px;
+}
+
+/* Discovery Log */
+.example{
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+figure{
+  border-style: double;
+}
+.disclog section{
+  margin-top: 10px;
+  text-align: center;
+}
+.disclog section p{
+  text-align: left;
+}
+.disclog section ul li{
+  text-align: left;
+  font-size: 1.5em;
+}
+.disclog section ul li a{
+  color: #000000;
+
+}
+img.xwing, img.xwing2{
+	display: block;
+}
+.xwing{
+    position: relative;
+    cursor: pointer;
+    width: 15%;
+    left: 0;
+    transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+.xwing2{
+	position: relative;
+ 	cursor: pointer;
+ 	width: 15%;
+ 	left: 100px;
+ 	transition: left 5s cubic-bezier(.5, -1, .5, 2);
+}
+#digit {
+	display: inline-block;
+  width: .5em;
+  overflow: hidden;
+  font: 32px monospace;
+  cursor: pointer;
+}
+#stripe {
+  display: inline-block
+}
+#stripe.animate {
+  transform: translate(-90%);
+  transition-property: transform;
+  transition-duration: 9s;
+  transition-timing-function: linear;
+}
+
+
+/* Extra Bits */
+#back-to-top{
+  display: none;
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  width: 50px;
+}
+
+/* Mobile Specific Styling - portrait view */
+@media screen and (orientation: portrait), screen and (device-width: 700px){
+  /*Standard HTML styling  */
+  html{
+    height: calc(100%);
+    box-sizing: border-box;
+  }
+  footer{
+    bottom: 0;
+    width: 100%
+  }
+  video{
+    width: 80%;
+  }
+
+  /* Index Specific Styling */
+  body.index{
+    height: calc(100%);
+    }
+  .index p{
+    margin-top: 60px;
+  }
+  .index footer{
+    bottom: 0;
+    position: fixed;
+  }
+  .index footer p{
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  /* Literature Review Styling */
+  .litreview section ul li{
+    word-wrap: break-word;
+  }
+
+  /* Discovery Log Stuff */
+  .xwing, .xwing2{
+    width:100px;
+  }
+
+  /* Other Bits  */
+  #back-to-top{
+    display: none;
+    position: fixed;
+    right: 1.5%;
+    bottom: 6%;
+    width: 7%;
+  }
+}

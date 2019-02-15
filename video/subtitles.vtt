@@ -1,0 +1,47 @@
+WEBVTT
+
+00:00.000 --> 00:04.999
+-Hello, welcome to my website, as you can see, this is the front page.
+
+00:05.000 --> 00:09.000
+-The video that I am currently recording will go in this spot here, and it is just a quick tour.
+
+00:09.100 --> 00:13.000
+-So at the moment so if we click that [Home Button], it's not going to do anything.
+
+00:13.100 --> 00:18.000
+-as you can see I've got my literature review, and my discovery log, and a couple of validation buttons.
+
+00:18.100 --> 00:22.000
+-So if we go ahead and start with those, lets get them both open.
+
+00:22.100 --> 00:28.000
+-so the html has validated with no errors, as has the css.
+
+00:28.100 --> 00:36.000
+-so I only have the css button on the front page, because it is the same stylesheet used without so there is no sense in validating it two other times
+
+00:37.000 --> 00:43.000
+-here we have my literature review, we've got a nice menu at the top and it just scrolls through
+
+00:43.100 --> 00:50.000
+-So it's got my entire literature review, It's got the bibliography and We've got a nice little scroll to top button which is covered in my discovery log
+
+00:50.100 --> 00:57.000
+-and if we quickly validate this page - there we go, that one has validated with no errors
+
+00.57:100 --> 01:00.000
+-now if we have a quick look at the discovery log
+
+01:00.100 --> 01:06.000
+-I've got most of the weeks in here, scrolling down I've got a couple of little animations that are just for a bit of fun
+
+01:06.100 --> 01:08.000
+-as well as some svg
+
+01:09.000 --> 01:12.000
+-and then, again we have our back to top button
+
+01:12.500 --> 01:20.000
+-and that is it, so then if we finally validate this page - there we are
+-we can see that that has no errors as well

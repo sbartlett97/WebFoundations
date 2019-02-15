@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="Images/icon.gif" type="image/favicon">
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/navBarStyle.css">
+    <title>Literature review</title>
+
+  </head>
+
+
+  <body>
+    <nav id="mainNav" aria-label="Navigation Bar" class="mainNav">
+      <a href="#"><img class="logo" src="Images/logo.svg" alt="Universiy of Portsmouth Logo"></a>
+      <a class="showMenu" aria-label="Menu" href="javascript:void(0);" tabindex="0" onclick="showMenu()">&#9776;Menu</a>
+      <ul>
+        <li aria-label="Home" tabindex="1" class="noBorder"><a href="index.html">Home</a></li>
+        <li aria-label="Literature Review" tabindex="2" class="active"><a href="litreview.html">Literature Review</a></li>
+        <li aria-label="Discovery Log" tabindex="3"><a href="disclog.html">Discovery Log</a></li>
+        <li aria-label="HTML Validation Link" tabindex="4"><a href="http://validator.w3.org/check/referer" target="_blank">HTML-Validation</a></li>
+      </ul>
+    </nav>
+
+
+    <article class="litreview">
+      <h1 id="top">Literature Review</h1>
+      <section>
+        <h2>Mitigating Corporate Information Exposure on the Web</h2>
+        <p>As technology advances, and the average technological understanding of users increases, there is an increasing demand to protect systems against data breaches from the inside, as well as to protect against those from external sources.</p>
+        <p>This report looks at different ways in which corporate bodies can reduce the risk and impact of data breaches where the information is leaked or accessed through the web. The two areas it focuses on are the impact of the internal human element of a system, and how the risk of breaches from this element can be significantly reduced, as well as a framework that can be built in to web applications to ensure data transmissions from external databases remain secure and anonymous.</p>
+        <p>There are many studies that explore the topic of cyber security and information exposure, and limiting how much information can be exposed on a communication medium such as the web.  Several studies look at the internal human aspect of information systems as the most critical point of failure that results in the exposure of corporate information on the web, whether this is due to lack of understanding of security on the part of the employee, or if they were deliberately involved. </p>
+        <p>Reports from Keshnee Padayachee (2016), and Nathalie Baracaldo et al (2013) specifically look at the risk of insider threats, as well as how to mitigate the effects of these threats. Padayachee divides her report into 5 specific techniques, which are: Increase Effort; Increase Risks; Reduce rewards; Reduce Provocation and Remove excuse. (page 48) These key areas aim to make the task of exposing corporate information a lot less appealing, by making the task more difficult, increasing the risks involved for the attacker, reducing the possible gain from any attempts and to create an environment where such an attack shouldn’t occur or has no reason to occur.  As insider attacks account for 33% of recorded attacks (C. S. Institute, 2008), Baracaldo’s report favours the idea that insider attacks are carried out by employees that already possess the technical knowhow as well as the permissions to a system, and so proposes the idea of a system that is capable of monitoring suspicious behaviour, and revoking privileges accordingly (page 237).  This reactive approach to user permissions is designed to severely limit what potential attackers can achieve. This links in with Padayachee’s ideas of making the task of breaching data more difficult as a form of deterrent.
+        </p>
+        <p>Nader Sohrabi Safa and Carsten Maple (Computer Fraud and Security 2016) from the University of Warwick have approached the issue from the view that the human element of computer systems within an organisation are the key point of failure, as the users may not be completely aware or are ignorant of the security risk involving computers and what they should be doing themselves to prevent attacks; “Users’ negligence, ignorance, lack of awareness, mischievousness, apathy and resistance are usually the reasons for information security breaches.”(page 17). In their report, Safa and Maple outline several traps that unaware or apathetic users could fall into, which may result in data breaches. One of these is social engineering, which is the “psychological manipulation of individuals into performing actions to disclose confidential information.” (page 17) Safa and Maple mention ways in which users can be educated about risks of information exposure through media such as meetings, web pages, emails formal presentations and even games. Their theory being that if all users are correctly educated and provided with the correct materials and guidance, there will be less risk of information exposure due to lack of users’ awareness.
+        </p>
+        <p>Another vector for potential information exposure is through the increased use of web applications in the context of information retrieval from a database. A good example of this which Wassim El-Hajj et al (2016) feature in their article is that of Facebook, which stores roughly 100 petabytes of photos and videos across a three-month period, and has over 901 million users. (page 151) In reference to this, a report authored by Chong et al (2007a) found that web applications do not have sufficient built in security measures, which can have a severe impact on the confidentiality and security of transited data from a web application. Due to this, the article written by Wassim et al(2016) proposes a more standardised “framework for securing, by design, the information flow in web applications” (page 153). This proposed framework will allow developers </p>
+        <p> to analyse their current systems and identify areas of information flow that are not secure, and then apply appropriate measures to secure them. As well as this, the framework identifies methods in which to secure the transmissions of data from databases accessed by web applications, as existing we application security systems, such as SIF(Chong et al 2007b) which is based off of a java style language, include the database levels of web applications. This will further secure web applications from outsider attacks, as the transmitted data will be far more secure and harder to gain access to.</p>
+        <p>In conclusion there are many different and effective approaches to mitigating corporate information exposure on the web, the most prominent of these focussing on the human elements of the systems, and ensuring that all users do not have either: The means or willingness to breach data, or; The lack of understanding of information security resulting in data breaches</p>
+        <p>Both of these elements can significantly reduce the damage caused to a business as they can have a limiting effect on how much data is breached, as well as this they can significantly reduce the risk of insider threats, and the damage they can cause to reputation. (Padayachee (2016), Baracaldo et al (2013))</p>
+        <p>Similarly, the security framework outlined by Wassim (2016) can also have a significant impact on data breaches from outside sources, as it ensures the confidentiality and security of communications from corporate databases which are accessed through web applications.</p>
+      </section>
+
+
+      <section>
+        <h2>Bibliography</h2>
+        <ul>
+          <li>Baracaldo, N., &amp; Joshi, J. (2013, August 1). An adaptive risk management and access control framework to mitigate insider threats. Computers and Security, pp. 237-254. Retrieved from <a href="https://ac.els-cdn.com/S0167404813001119/1-s2.0-S0167404813001119-main.pdf?_tid=8a42bbec-c090-11e7-a981-00000aab0f02&acdnat=1509711448_d7bfbce07310afa853a0de18a4568f96">https://ac.els-cdn.com/S0167404813001119/1-s2.0-S0167404813001119-main.pdf?_tid=8a42bbec-c090-11e7-a981-00000aab0f02&acdnat=1509711448_d7bfbce07310afa853a0de18a4568f96</a></li>
+          <li>Chong, S., Liu, J., Myers, A. C., Qi, X., Vikram, K., Zheng, L., &amp; Zheng, X. (2007). Secure Web Applications via Automatic Partitioning. Cornell University. Retrieved from <a href="http://www.cs.cornell.edu/andru/papers/swift-sosp07.pdf">http://www.cs.cornell.edu/andru/papers/swift-sosp07.pdf</a></li>
+          <li>Chong, S., Vikram, K., &amp; Myers, A. C. (2007). SIF: Enforcing Confidentiality and Integrity in Web Applications. 16th USENIX Security Symposium. Retrieved from <a href="https://www.cs.cornell.edu/andru/papers/sif.pdf">https://www.cs.cornell.edu/andru/papers/sif.pdf</a></li>
+          <li>Padayachee, K. (2016, December 19). An assessment of opportunity-reducing techniques in information security: An insider threat perspective. Decision Support Systems, 92, pp. 47-56. Retrieved from <a href="https://ac.els-cdn.com/S0167923616301610/1-s2.0-S0167923616301610-main.pdf?_tid=33faccc6-bfbd-11e7-b4dd-00000aab0f26&acdnat=1509620680_01fea87344a3f5535751be2f8793ea88">https://ac.els-cdn.com/S0167923616301610/1-s2.0-S0167923616301610-main.pdf?_tid=33faccc6-bfbd-11e7-b4dd-00000aab0f26&acdnat=1509620680_01fea87344a3f5535751be2f8793ea88</a></li>
+          <li>Safa, N. S. (2016, September). Human errors in the information security realm and how to fix them. Computer Fraud And Security(9), pp. 17-20. doi:10.1016/S1361-3723(16)30073-2</li>
+          <li>Wassim El-Hajj, G. B. (2016, June). Security-by-construction in web applications development via database annotations. Computers and Security, 59, pp. 151-165. Retrieved from <a href="https://ac.els-cdn.com/S0167404815001972/1-s2.0-S0167404815001972-main.pdf?_tid=6f90868e-c087-11e7-b665-00000aab0f26&acdnat=1509707538_c3496790ecea78e3532208b93f36731d">https://ac.els-cdn.com/S0167404815001972/1-s2.0-S0167404815001972-main.pdf?_tid=6f90868e-c087-11e7-b665-00000aab0f26&acdnat=1509707538_c3496790ecea78e3532208b93f36731d</a></li>
+        </ul>
+      </section>
+    </article>
+    <a href="javascript:"><img src="Images/arrow.png" id="back-to-top" alt="back-to-top"/></a>
+    <footer>
+      <p>Website created by UP777815</p>
+
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+          $('#back-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+          $('#back-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+      });
+      $('#back-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+      });
+    </script>
+    <script src="scripts/showMenu.js">
+    </script>
+  </body>
+
+</html>
